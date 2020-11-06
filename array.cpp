@@ -23,31 +23,31 @@ using namespace std;
     cout<<"maximum number is "<<maxn<<endl;
     cout<<"minmum number is "<<minn<<endl; */
     //**************linear search*****************
-    int key ,flag,ind=-1 ;
-    flag=0;
-    cout<<"enter the key \n";
-    cin>>key;
-    for ( i = 0; i < n; i++)
-    {
-        if (array[i]==key)
-        {
-            flag=1;
-            ind=i;
-            break;
-        }
+    // int key ,flag,ind=-1 ;
+    // flag=0;
+    // cout<<"enter the key \n";
+    // cin>>key;
+    // for ( i = 0; i < n; i++)
+    // {
+    //     if (array[i]==key)
+    //     {
+    //         flag=1;
+    //         ind=i;
+    //         break;
+    //     }
        
         
-    }
-    if (flag==1)
-    {
-        cout<<"found at index "<<ind<<endl;
-    }
-    else
-        {
-            cout<<"not found"<<endl;
-        }
-        
-    
+    // }
+    // if (flag==1)
+    // {
+    //     cout<<"found at index "<<ind<<endl;
+    // }
+    // else
+    //     {
+    //         cout<<"not found"<<endl;
+    //     }
+    //*************binary search******************
+
     
     
     return 0;
