@@ -1,3 +1,25 @@
+//1 
+//0c0
+
+//1   1
+//1c0  1c1
+
+//1   2   1
+//2c0 2c1 2c2
+
+//1   3   3   1
+//3c0 3c1 3c2 3c3
+
+//1   4   6   4   1
+//4c0 4c1 4c2 4c3 4c4 
+
+// here row will go from 1 to n
+// column will go from 1 to row number
+// n = i
+// c= j
+//t(c,i)=icj
+
+
 #include<iostream>
 using namespace std ;
 int factt(int n)
