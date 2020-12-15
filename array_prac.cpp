@@ -13,8 +13,28 @@ using namespace std ;
     return -1 ;
 }
 
-int binn(int arr[],int n ,int key)
+int binn(int arr[],int n ,int key) //sorting
 {
+     for (int i = 0; i < n-1; i++)
+    {
+        for (int j = i+1 ; j < n; j++)
+        {
+            if (arr[j]<arr[i])
+            {
+                int temp;
+                temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+            }
+            
+        }
+         
+    }
+     for (int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<<endl;
+    }
+    
     int s=0;
     int e=n;
     int mid;
@@ -36,7 +56,7 @@ int binn(int arr[],int n ,int key)
         }
         
         
-    }
+    } 
     return -1;
 }
 main()
@@ -47,9 +67,10 @@ main()
     int number;
     cin>>number;
     int n ;
+    cout<<"Enter the array size " <<endl;
     cin>>n;
     int arr[n];
-    cout<<"Enter the array elements";
+    cout<<"Enter the array elements"<<endl;
     for( int i=0 ;i < n ;i++)
     {
         cin>>arr[i];
