@@ -35,7 +35,7 @@ int binn(int arr[],int n ,int key) //sorting
         cout<<arr[i]<<endl;
     }
     
-    int s=0;
+    int s=0; /// binary search 
     int e=n;
     int mid;
     while (s<=e)
@@ -91,6 +91,9 @@ main()
         cout<<"SELECT FROM NUMBER FROM ABOVE"<<endl;
         break;
     }
+     
+     
+     
      // cout<<linear( arr, n, key);
     //cout<<binn(arr, n,key);
 }
