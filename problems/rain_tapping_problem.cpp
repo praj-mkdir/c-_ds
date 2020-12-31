@@ -14,7 +14,7 @@ Print the total amount of water stored. */
 using  namespace std ;
 main()
 {
-    int arr[]={0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    /* int arr[]={0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
     int lft[n];
     int rght[n];
@@ -35,8 +35,39 @@ main()
     {
         water += min(lft[i], rght[i]) - arr[i];
     }
-    cout<<"maximum water accumlated "<<water;
-    
+    cout<<"maximum water accumlated "<<water; */
+    {
+    //rain water tapping  O[n] optimal approach
+    int arr[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+    int n = sizeof(arr) / sizeof(arr[0]); // here sizeof(arr) gives in bytes of the total array by dividing it by single element we get whole array
+    int left=0,leftmax=0;
+    int right=n-1 , rightmax=0;
+    int result=0;
+    while (left < right )
+    {
+        if (arr[left] <= arr[right]) //intuition here we are making sure that there will greater building than left 
+        {
+            if (arr[left]>=leftmax) leftmax=arr[left];
+            else result+=leftmax-arr[left];
+            
+            left++;
+        }
+        else
+        {
+            if (arr[right]>=rightmax) rightmax=arr[right];
+            else result+=rightmax-arr[right];
+            right--;
+            
+        }
+        
+        
+    }
+    cout<<" total number of water is "<<result<<endl;
+
+
+
+
+}
 
 
 
