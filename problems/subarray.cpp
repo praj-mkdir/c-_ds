@@ -9,6 +9,7 @@ main()
     {
         cin>>arr[i];
     }
+    // here the time complexity is O(n³) and it brute method 
     
     for ( i = 0; i < n; i++)
     {
